@@ -12,5 +12,5 @@ public interface MessageMQ_Service {
 
     public  Message get_mostrarMessageByID( Long id_message ) throws Exception;
 
-    
+
 }

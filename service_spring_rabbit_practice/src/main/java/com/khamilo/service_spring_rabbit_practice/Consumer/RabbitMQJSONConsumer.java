@@ -17,7 +17,16 @@ public class RabbitMQJSONConsumer {
 
         LOGGER.info(String.format("Consumer: Mensaje JSON Recibido -> %s", message.toString()));
 
+        makeSlow();
     }
 
+    private void makeSlow(){
+
+        try{
+            Thread.sleep(5000);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
 
 }
